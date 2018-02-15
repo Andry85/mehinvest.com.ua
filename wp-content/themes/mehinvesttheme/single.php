@@ -16,21 +16,13 @@
 					<li><a href="#" title="">Продукция</a><span>\</span></li>
 					<li><a href="#" title="">Дорожные знаки</a></li>
 				</ul>
-				<?php
-				
-					$lastPosts = new WP_Query('type=post&cat=7');
-						if ($lastPosts->have_posts() ) : 
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-							while ($lastPosts->have_posts() ) : $lastPosts->the_post(); ?>
-							
-							<?php get_template_part('content',get_post_format()); ?>	
+					<?php get_template_part('content',get_post_format()); ?>	
 
-						<?php endwhile; 
-
-						endif; 
-					wp_reset_postdata();
-				?>
-
+				<?php endwhile; else : ?>
+					<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+				<?php endif; ?>				
 			</div>
 		</div> 
 	</div>

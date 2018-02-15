@@ -20,7 +20,38 @@
 	}
 	add_action('init', 'mehinvesttheme_theme_setup');
 
-	
+	//add_theme_support('custom-background');
+	//add_theme_support('custom-header');
+	add_theme_support('post-thumbnails');
+	add_theme_support('post-formats', array('image'));
+
+
+
+/*
+	===============================
+		Sidebar function
+	===============================
+*/
+	function mehinvesttheme_widget_setup() {
+		/**
+		 * Creates a sidebar
+		 * @param string|array  Builds Sidebar based off of 'name' and 'id' values.
+		 */
+		$args = array(
+			'name'          =>'Sidebar name',
+			'id'            => 'sidebar-1',
+			'description'   => 'Left Sidebar',
+			'class'         => 'menu',
+			'before_widget' => '<ul class="menu">',
+			'after_widget'  => '</ul>',
+			'before_title'  => '<span style="display: none;">',
+			'after_title'   => '</span>',
+		);
+		
+		register_sidebar( $args );	
+	}
+
+	add_action('widgets_init','mehinvesttheme_widget_setup');
 
 
  ?>
