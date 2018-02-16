@@ -7,6 +7,6 @@
 		   </a>	
 		</div>
 	 <?php } ?>
-	<p><?php the_content(); ?></p>
-	<span class="date"><?php echo get_the_date(); ?></span>
+	 <p><?php the_content(); ?></p>
 </div>	
+	

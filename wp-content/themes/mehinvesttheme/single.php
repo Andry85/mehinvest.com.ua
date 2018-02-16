@@ -1,13 +1,7 @@
 <?php get_header();  ?>
 <div class="content clearfix">
 	<div class="left-col">
-		<aside>
-			<ul class="menu">
-				<?php wp_list_categories( array(
-			        'title_li' => ''
-			    ) ); ?>
-			</ul>
-		</aside>
+		<?php get_sidebar(); ?>
 	</div>
 	<div class="right-col">
 		<div class="inner">
@@ -18,7 +12,14 @@
 				</ul>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part('content',get_post_format()); ?>	
+					<?php get_template_part('single','content'); ?>	
+
+					<nav class="paginator clearfix">
+					    <ul>
+					    	<li class="paginator-next"><?php previous_post_link() ?></li>
+					        <li class="paginator-prev"><?php next_post_link() ?></li> 
+					    </ul>
+					</nav>
 
 				<?php endwhile; else : ?>
 					<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>

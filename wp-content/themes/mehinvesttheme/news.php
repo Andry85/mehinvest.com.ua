@@ -27,6 +27,6 @@
 		echo '</ul>';
 
 	 ?>
-	<a class="archiv-news" href="#" title="">Архив новостей</a>
+	<a class="archiv-news" href="?page_id=23" title="">Архив новостей</a>
 </section>
 
