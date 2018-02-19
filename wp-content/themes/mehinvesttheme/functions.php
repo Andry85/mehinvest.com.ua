@@ -54,4 +54,16 @@
 	add_action('widgets_init','mehinvesttheme_widget_setup');
 
 
+/*
+	===============================
+		Head function
+	===============================
+*/	
+
+	function mehinvesttheme_remove_version() { 
+		return '';
+	}
+	add_filter('the_generator','mehinvesttheme_remove_version');
+
+
  ?>

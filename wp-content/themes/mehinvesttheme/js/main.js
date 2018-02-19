@@ -34,11 +34,10 @@ $(document).ready( function(){
         if(wiw < 768) {
         	$('.left-col').insertAfter('.right-col');
         }
-    };    
+    }; 
 
 	
 
 
 });
 //end ready
-

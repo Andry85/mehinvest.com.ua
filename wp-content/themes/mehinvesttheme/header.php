@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes() ?>>
 <head>
-	<meta charset="utf-8">
-	<title>Mehinvest Theme</title>
+	<meta charset="<?php bloginfo('charset') ?>">
+	<title><?php wp_title() ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<?php wp_head(); ?>
@@ -24,9 +24,7 @@
 					<?php pll_the_languages( array( 'show_flags' => 1,'show_names' => 0 ) ); ?>	
 				</ul>
 				<div class="head-inner">
-					<a class="logo" href="#" title="">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="" title="">
-					</a>
+					<a class="logo" href="<?php echo get_home_url(); ?>" title=""></a>
 					<div class="phone">
 						<p><span>[097]</span>033-77-04</p>
 						<div class="mail"><a href="mailtoo:mex-invest-bud@ukr.net" title="mex-invest-bud@ukr.net">mex-invest-bud@ukr.net</a></div>
