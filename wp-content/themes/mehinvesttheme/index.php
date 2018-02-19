@@ -18,29 +18,20 @@
 						'paged' => $paged
 
 					);
-				
 					$lastPosts = new WP_Query($args);
 						if ($lastPosts->have_posts() ) : 
-
 							while ($lastPosts->have_posts() ) : $lastPosts->the_post(); ?>
-							
 							<?php get_template_part('content',get_post_format()); ?>	
-
 						<?php endwhile;  ?>
-
 							<nav class="paginator clearfix">
 							    <ul>
 							    	<li class="paginator-next"><?php next_posts_link( '&laquo; PREV', $lastPosts->max_num_pages) ?></li>
 							        <li class="paginator-prev"><?php previous_posts_link( 'NEXT &raquo;', $lastPosts->max_num_pages) ?></li> 
 							    </ul>
 							</nav>
-
 						<?php endif; 
 					wp_reset_postdata();
 				?>
-
-				
-
 			</div>
 		</div> 
 	</div>

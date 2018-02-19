@@ -20,10 +20,12 @@
 <!-- Wrapper -->
 		<div class="wrapper">  
 			<header>
+				<ul class="languages">
+					<?php pll_the_languages( array( 'show_flags' => 1,'show_names' => 0 ) ); ?>	
+				</ul>
 				<div class="head-inner">
 					<a class="logo" href="#" title="">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="" title="">
-
 					</a>
 					<div class="phone">
 						<p><span>[097]</span>033-77-04</p>
