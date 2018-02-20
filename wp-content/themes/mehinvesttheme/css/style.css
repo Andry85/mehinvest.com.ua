@@ -195,6 +195,17 @@ a.archiv-news {background: url(../img/archiv-news-bg.png) 0 3px no-repeat; paddi
 .patway li a {color: #9a9ca0; text-decoration: none;}
 .patway li a:hover {text-decoration: underline;}
 .patway li span {padding: 0 0 0 4px;}
+
+.breadcrumbs {
+  margin-top: -18px;
+  padding-bottom: 18px;
+  color: #9a9ca0; font-size: 12px;
+}
+.breadcrumbs a {
+  color: #9a9ca0; 
+  text-decoration: underline;
+}
+
 .container h3 {padding: 0 0 6px 0;}
 .container p {margin: 9px 0;}
 .list {padding: 12px 0 11px 0;}

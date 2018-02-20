@@ -6,10 +6,12 @@
 	<div class="right-col">
 		<div class="inner">
 			<div class="container">
-				<ul class="patway">
-					<li><a href="#" title="">Продукция</a><span>\</span></li>
-					<li><a href="#" title="">Дорожные знаки</a></li>
-				</ul>
+				<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+				    <?php if(function_exists('bcn_display'))
+				    {
+				        bcn_display();
+				    }?>
+				</div>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part('single','content'); ?>	
