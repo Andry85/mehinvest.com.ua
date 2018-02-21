@@ -36,6 +36,15 @@ $(document).ready( function(){
         }
     }; 
 
+
+    var attr = $('html').attr('lang');
+    if (attr == 'uk') {
+    	$('.archiv-news').attr('href', '?page_id=579');
+    } else {
+    	$('.archiv-news').attr('href', '?page_id=23');
+    };
+
+
 	
 
 

@@ -1,5 +1,7 @@
 <div class="servises">
-	<h3>Наши услуги:</h3>
+	<h3>
+		<?php echo get_post_meta($post->ID, 'right-sidebar-title', true); ?>
+	</h3>
 	<div class="slider">
 		<div id="mycarousel" class="servises-list owl-carousel clearfix">
 			<?php 
@@ -32,7 +34,7 @@
 									   	<?php the_post_thumbnail('thumbnail'); ?>
 									   </a>	
 									 <?php } ?>
-									<p><?php the_content(); ?></p>
+									<p><?php the_excerpt(); ?></p>
 								</div>
 						<?php endwhile; 
 						endif; 

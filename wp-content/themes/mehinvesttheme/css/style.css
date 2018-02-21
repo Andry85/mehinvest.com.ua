@@ -256,7 +256,7 @@ a.archiv-news {background: url(../img/archiv-news-bg.png) 0 3px no-repeat; paddi
   float: left; 
   border: 4px solid #f2f2f2; 
   position: relative; 
-  margin: 0 42px 0 0;
+  margin: 0 32px 0 0;
   border-radius: 3px;
 
 }
@@ -362,6 +362,14 @@ footer {width: 954px; margin: 0 0 0 -477px; padding: 0 0 25px 0; position: absol
   display: block;
   padding: 5px;
 }
+.alignleft {
+  float: left;
+  margin: 0 15px 0 0;
+}
+.alignright {
+  float: right;
+  margin: 0 0 0 15px;
+}
 
 
 
@@ -415,7 +423,18 @@ footer {width: 954px; margin: 0 0 0 -477px; padding: 0 0 25px 0; position: absol
 }
 
 /* MOBILE */
-@media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 767px) {
+  .slicknav_icon-bar {
+    transition: all 0.3s ease-in;
+  }
+  .slicknav_btn.slicknav_open .slicknav_icon-bar {position: absolute; top: 10px;}
+  .slicknav_btn.slicknav_open  .slicknav_icon-bar:first-child {display: none;}
+  .slicknav_btn.slicknav_open  .slicknav_icon-bar:nth-child(2) {transform: rotate(45deg);}
+  .slicknav_btn.slicknav_open  .slicknav_icon-bar:nth-child(3) {transform: rotate(-45deg);}
+  .alignleft,.alignright {
+    float: none;
+    margin: 0 0 15px 0;
+  }
   .logo {
     width: 96px;
     height: 62px;
@@ -446,10 +465,13 @@ footer {width: 954px; margin: 0 0 0 -477px; padding: 0 0 25px 0; position: absol
     right: 0;
     z-index: 11;
     width: 100%;
+    height: 100%;
     padding: 0;
   }
   .slicknav_nav {
     background: #1b1a27;
+    height: 100%;
+    overflow-y: scroll;
   }
   header {
     position: fixed;
@@ -459,6 +481,9 @@ footer {width: 954px; margin: 0 0 0 -477px; padding: 0 0 25px 0; position: absol
     padding: 10px;
     background: #fff;
     border-bottom: 1px solid #b32b07;
+  }
+  .breadcrumbs {
+    display: none;
   }
   .content {
     margin-top: 80px;
@@ -474,6 +499,21 @@ footer {width: 954px; margin: 0 0 0 -477px; padding: 0 0 25px 0; position: absol
   }
   .slicknav_nav a {
     padding: 10px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    border-radius: 0;
+  }
+  .slicknav_nav .slicknav_row {
+    padding: 10px;
+  }
+  .slicknav_nav a:hover,.slicknav_nav .slicknav_row:hover {
+    border-radius: 0;
+    background-color: #b32b07;
+    color: #fff;
+  }
+ 
+  .slicknav_nav li {
+    border-radius: 0;
   }
   .left-col {
     width: 100%;

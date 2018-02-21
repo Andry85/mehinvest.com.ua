@@ -53,6 +53,27 @@
 
 	add_action('widgets_init','mehinvesttheme_widget_setup');
 
+	function mehinvesttheme_widget_setupfooter() {
+		/**
+		 * Creates a sidebar
+		 * @param string|array  Builds Sidebar based off of 'name' and 'id' values.
+		 */
+		$args = array(
+			'name'          =>'Footer text',
+			'id'            => 'footer-text',
+			'description'   => 'Footer text',
+			'class'         => '',
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '<span style="display: none;">',
+			'after_title'   => '</span>',
+		);
+		
+		register_sidebar( $args );	
+	}
+
+	add_action('widgets_init','mehinvesttheme_widget_setupfooter');
+
 
 /*
 	===============================
@@ -64,6 +85,11 @@
 		return '';
 	}
 	add_filter('the_generator','mehinvesttheme_remove_version');
+
+	function new_excerpt_length($length) {
+		return 10;
+	}
+	add_filter('excerpt_length', 'new_excerpt_length');
 
 
  ?>

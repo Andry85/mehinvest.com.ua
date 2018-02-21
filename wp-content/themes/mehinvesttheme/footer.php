@@ -29,7 +29,9 @@
 					<div class="meter"><img src="img/meter.jpg" alt="" title=""></div>
 				</div>
 				<div class="footer-right">
-					<p>2018 «МЕХ ИНВЕСТ». Все права защищены. Копирование материалов сайта запрещено.</p>
+					<?php if ( is_active_sidebar( 'footer-text' ) ) : ?>
+						<?php dynamic_sidebar( 'footer-text' ); ?>
+					<?php endif; ?>
 				</div>
 			</div>
 		</footer>
