@@ -435,6 +435,9 @@ footer {width: 954px; margin: 0 0 0 -477px; padding: 0 0 25px 0; position: absol
     float: none;
     margin: 0 0 15px 0;
   }
+  .slicknav_nav ul {
+    margin: 0;
+  }
   .logo {
     width: 96px;
     height: 62px;
@@ -447,6 +450,8 @@ footer {width: 954px; margin: 0 0 0 -477px; padding: 0 0 25px 0; position: absol
     right: 0;
     bottom: auto;
     top: 30px;
+    display: none;
+
   }
   .phone p {
     font-size: 22px;
@@ -473,13 +478,14 @@ footer {width: 954px; margin: 0 0 0 -477px; padding: 0 0 25px 0; position: absol
     overflow-y: scroll;
     position: fixed;
     width: 100%;
+    padding: 10px 0 0 0;
   }
   header {
     position: fixed;
     width: 100%;
     left: 0;
     top: 0;
-    padding: 10px;
+    padding: 5px;
     background: #fff;
     border-bottom: 1px solid #b32b07;
   }
@@ -494,20 +500,23 @@ footer {width: 954px; margin: 0 0 0 -477px; padding: 0 0 25px 0; position: absol
   }
   .slicknav_btn {
     position: absolute;
-    right: 0; 
-    top: 0;
+    right: 5px; 
+    top: 18px;
     background: #b32b07;
     z-index: 10;
   }
   .slicknav_nav a {
-    padding: 10px;
+    padding: 20px 10px;
     text-transform: uppercase;
     line-height: 1.4;
     border-radius: 0;
+    margin: 0;
   }
   .slicknav_nav .slicknav_row {
-    padding: 10px;
+    padding: 20px 10px;
+    margin: 0;
   }
+
   .slicknav_nav a:hover,.slicknav_nav .slicknav_row:hover {
     border-radius: 0;
     background-color: #b32b07;
@@ -516,6 +525,7 @@ footer {width: 954px; margin: 0 0 0 -477px; padding: 0 0 25px 0; position: absol
  
   .slicknav_nav li {
     border-radius: 0;
+    border-bottom: 1px solid #ccc;
   }
   .left-col {
     width: 100%;
