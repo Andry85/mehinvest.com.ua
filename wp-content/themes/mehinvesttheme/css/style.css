@@ -372,6 +372,18 @@ footer {width: 954px; margin: 0 0 0 -477px; padding: 0 0 25px 0; position: absol
 }
 
 
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
 
 
 /* responsive */
