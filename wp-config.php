@@ -19,14 +19,18 @@
  */
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
-/** Имя базы данных для WordPress */
+/** Имя базы данных для WordPress live site */
+// define('DB_NAME', 'mehinvest');
+// define('DB_USER', 'mehinvest');
+// define('DB_PASSWORD', 'yVQtr1342');
+
+/** Имя базы данных для WordPress localhost */
 define('DB_NAME', 'mehinvest');
+define('DB_USER', 'root');
+define('DB_PASSWORD', '');
 
-/** Имя пользователя MySQL */
-define('DB_USER', 'mehinvest');
 
-/** Пароль к базе данных MySQL */
-define('DB_PASSWORD', 'yVQtr1342');
+
 
 /** Имя сервера MySQL */
 define('DB_HOST', 'localhost');
