@@ -43,6 +43,7 @@ define('DB_COLLATE', '');
 
 define( 'WP_AUTO_UPDATE_CORE', false );
 
+
 /**#@+
  * Уникальные ключи и соли для аутентификации.
  *
