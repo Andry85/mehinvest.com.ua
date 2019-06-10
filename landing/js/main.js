@@ -351,7 +351,25 @@ $(document).ready(function(){
 
         $(document).ready(function() {
             $('#mc_embed_signup').find('form').ajaxChimp();
-        });      
+        });  
+
+
+
+
+$("a[href^='#popupForm']").click(function(e) {
+      e.preventDefault();
+      $('.popupForm').fadeIn();
+});
+
+ $(".popupForm__cloze,.popupForm__shadow").click(function(e) {
+      $('.popupForm').fadeOut();
+  });
+
+  $(document).on( 'keydown', function ( e ) {
+    if (e.keyCode === 27 ) { // ESC
+        $('.popupForm').fadeOut();
+    }
+  });    
 
 
 
