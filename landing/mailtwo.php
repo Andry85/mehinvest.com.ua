@@ -1,8 +1,9 @@
 <?php
     $to = 'shapovala@ukr.net';
-    $firstname = $_POST["name"];
-    $email= $_POST["email"];
-    $text= $_POST["message"];
+    $firstname = $_POST["nameSend"];
+    $email= $_POST["emailSend"];
+    $text= $_POST["messageSend"];
+    $phone = $_POST["phoneSend"];
     
 
 
@@ -12,6 +13,7 @@
 
     $message ='<table style="width:100%">
         <tr><td>Name: '.$firstname.'</td></tr>
+        <tr><td>Phone: '.$phone.'</td></tr>
         <tr><td>Email: '.$email.'</td></tr>
         <tr><td>Text: '.$text.'</td></tr>
         
@@ -25,3 +27,4 @@
     }
 
 ?>
+
