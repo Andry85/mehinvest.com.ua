@@ -760,6 +760,10 @@ td, th {
   background: #f9fafc;
 }
 
+.phones {
+  color: #fff;
+}
+
 @media (max-width: 767px) {
   .no-flex-xs {
     display: block !important;

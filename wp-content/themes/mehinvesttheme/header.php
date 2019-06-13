@@ -26,7 +26,7 @@
 				<div class="head-inner">
 					<a class="logo" href="<?php echo get_home_url(); ?>" title=""></a>
 					<div class="phone">
-						<p><span>[097]</span>033-77-04</p>
+						<p><span>[068]</span>375-81-52</p>
 						<div class="mail"><a href="mailtoo:mex-invest-bud@ukr.net" title="mex-invest-bud@ukr.net">mex-invest-bud@ukr.net</a></div>
 					</div>
 				</div>
