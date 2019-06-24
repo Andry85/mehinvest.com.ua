@@ -1,5 +1,5 @@
 <?php
-    $to = 'shapovala@ukr.net';
+    $to = 'mex-invest-bud@ukr.net';
     $firstname = $_POST["nameSend"];
     $email= $_POST["emailSend"];
     $text= $_POST["messageSend"];
